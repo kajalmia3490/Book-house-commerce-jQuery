@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book House</title>
+
+    <!-- css file import -->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" />
+
+    <!-- jQuery link -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+</head>
+
+<body>
+
+    <!-- header section -->
+    <header>
+        <div class="book-image">
+            <i class="fa-solid fa-book-open-reader book-icon" onclick="pageReload()"></i>
+        </div>
+        <h1 class="title">
+            <a href="#" onclick="pageReload()">
+                Book House
+            </a>
+        </h1>
+
+        <!-- simple headline for contact -->
+        <marquee direction="left">
+            Emargency Call
+            <i class="fa-solid fa-tty"></i>
+            01949146285,
+            <i class="fa-solid fa-tty"></i>
+            01713708354
+        </marquee>
+    </header>
+
+    <!-- main section -->
+    <main>
+
+        <!-- left section -->
+        <section class="left-section">
+            <h4>
+                <i class="fa-solid fa-database"></i>
+                Catergory of Books
+            </h4>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-snowflake"></i>
+                        General Knowledge
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-flask-vial"></i>
+                        Science Fiction
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-hands-holding-circle"></i>
+                        Novel
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-landmark"></i>
+                        Historical
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-receipt"></i>
+                        Poem
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-memory"></i>
+                        Story
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+                        Small Story
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-grip"></i>
+                        See all
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="carts">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Added Cart ( <span id="added-cart" onclick="added()">0</span> )
+                    </a>
+                </li>
+
+            </ul>
+        </section>
+
+        <!-- right section -->
+        <section class="right-section">
+
+            <!-- books card -->
+            <div class="book-card">
+
+                <div class="book1">
+                    <img src="https://m.media-amazon.com/images/I/71nBEABWTCL._AC_UF1000,1000_QL80_.jpg" alt="...">
+                    <p class="book-name">
+                        General Knowledge
+                    </p>
+                    <p>
+                        Price: $139
+                    </p>
+                    <button class="btn1" id="btn" onclick="buttonClick1()">
+                        Add To Cart
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+                <div class="book2">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2021/2/SA/IQ/HS/49559104/img-20210211-121925-500x500.jpg"
+                        alt="...">
+                    <p class="book-name">
+                        The Jungle Book
+                    </p>
+                    <p>
+                        Price: $339
+                    </p>
+                    <button class="btn2" id="btn" onclick="buttonClick2()">
+                        Add To Cart
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+                <div class="book3">
+                    <img src="https://marketplace.canva.com/EAFMlxqVi1U/1/0/1003w/canva-black-mystery-novel-book-cover-DqHX0DWBxm8.jpg"
+                        alt="...">
+                    <p class="book-name">
+                        Thread
+                    </p>
+                    <p>
+                        Price: $119
+                    </p>
+                    <button class="btn3" id="btn" onclick="buttonClick3()">
+                        Add To Cart
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+                <div class="book4">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/best-historical-books-alexander-hamilton-1600137689.jpg"
+                        alt="...">
+                    <p class="book-name">
+                        Ron Chernow
+                    </p>
+                    <p>
+                        Price: $199
+                    </p>
+                    <button class="btn4" id="btn" onclick="buttonClick4()">
+                        Add To Cart
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+                <div class="book5">
+                    <img src="https://s26162.pcdn.co/wp-content/uploads/2019/09/91TnH6cu4uL-654x1024.jpg" alt="...">
+                    <p class="book-name">
+                        What isn't yours
+                    </p>
+                    <p>
+                        Price: $239
+                    </p>
+                    <button class="btn5" id="btn" onclick="buttonClick5()">
+                        Add To Cart
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+                <div class="book6">
+                    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1254956411i/6953644.jpg"
+                        alt="...">
+                    <p class="book-name">
+                        Short Stories
+                    </p>
+                    <p>
+                        Price: $39
+                    </p>
+                    <button class="btn6" id="btn" onclick="buttonClick6()">
+                        Add To Cart
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+                <div class="book7">
+                    <img src="https://assets.brightspot.abebooks.a2z.com/dims4/default/565ad39/2147483647/strip/true/crop/195x300+0+0/resize/195x300!/format/jpg/quality/90/?url=http%3A%2F%2Fabebooks-brightspot.s3.amazonaws.com%2F9a%2Fef%2Fd4bf8b1a40d180e2e93fddc869bb%2Fbest-history01.jpg"
+                        alt="...">
+                    <p class="book-name">
+                        Grant
+                    </p>
+                    <p>
+                        Price: $99
+                    </p>
+                    <button class="btn7" id="btn" onclick="buttonClick7()">
+                        Add To Cart
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+                <div class="book8">
+                    <img src="https://fivebooks.com/app/uploads/2022/05/god-anatomy-195x300.jpeg" alt="...">
+                    <p class="book-name">
+                        God Anatomy
+                    </p>
+                    <p>
+                        Price: $139
+                    </p>
+                    <button class="btn8" id="btn" onclick="buttonClick8()">
+                        Add To Cart
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+                <div class="book9">
+                    <img src="https://m.media-amazon.com/images/I/41zPYRRuquL._SL500_.jpg" alt="...">
+                    <p class="book-name">
+                        Born to Love
+                    </p>
+                    <p>
+                        Price: $109
+                    </p>
+                    <button class="btn9" id="btn" onclick="buttonClick9()">
+                        Add To Cart
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+                <div class="book10">
+                    <img src="https://www.marybuffett.com/wp-content/uploads/2019/05/7SecretsToInvesting_MaryBuffett.jpg"
+                        alt="...">
+                    <p class="book-name">
+                        7 Secret
+                    </p>
+                    <p>
+                        Price: $179
+                    </p>
+                    <button class="btn10" id="btn" onclick="buttonClick10()">
+                        Add To Cart
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+                <div class="book11">
+                    <img src="https://prodimage.images-bn.com/pimages/9780307476074_p0_v7_s550x406.jpg" alt="...">
+                    <p class="book-name">
+                        Wild
+                    </p>
+                    <p>
+                        Price: $100
+                    </p>
+                    <button class="btn11" id="btn" onclick="buttonClick11()">
+                        Add To Cart
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+                <div class="book12">
+                    <img src="https://static.wixstatic.com/media/45a088_8b39b923ffb64ffe9ae4d9201bd9ef8e~mv2.jpg/v1/fill/w_272,h_410,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/AnyiaSeries_web_2022.jpg"
+                        alt="...">
+                    <p class="book-name">
+                        Anyia
+                    </p>
+                    <p>
+                        Price: $139
+                    </p>
+                    <button class="btn12" id="btn" onclick="buttonClick12()">
+                        Add To Cart
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+
+        <!-- other books -->
+        <div class="other-books">
+            <h1>
+                Other Books
+            </h1>
+            <p>
+                <a href="#">English</a>
+            </p>
+            <p>
+                <a href="#">Freedom</a>
+            </p>
+            <p>
+                <a href="#">Peace of Mind</a>
+            </p>
+            <p>
+                <a href="#">Religious</a>
+            </p>
+
+        </div>
+
+        <!-- community -->
+        <div class="community">
+            <h1>
+                Community
+            </h1>
+            <p>
+                <a href="#">Privacy</a>
+            </p>
+            <p>
+                <a href="#">Policy</a>
+            </p>
+            <p>
+                <a href="#">Safety</a>
+            </p>
+            <p>
+                <a href="#">Community</a>
+            </p>
+        </div>
+
+        <!-- contact us -->
+        <div class="contact">
+            <h1>
+                Contact us
+            </h1>
+            <p>
+                <a href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                    kajalmia3490@gmail.com
+                </a>
+            </p>
+            <p>
+                <a href="https://www.facebook.com/kajalmia3490">
+                    <i class="fa-brands fa-facebook"></i>
+                    Facebook
+                </a>
+            </p>
+            <p>
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- js file import -->
+    <script src="../jquery/app.js"></script>
+
+</body>
+
+</html>

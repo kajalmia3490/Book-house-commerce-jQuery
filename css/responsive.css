@@ -1,0 +1,45 @@
+/* Smartphones */
+@media (max-width: 480px) {
+    header {
+        margin: 20px 10px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .right-section {
+        padding: 20px 10px;
+    }
+
+    .book-card {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+}
+
+/* Tablets and larger */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 5fr;
+    }
+
+    .book-card {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Laptops and larger */
+@media (min-width: 1024px) {
+    .book-card {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* Desktops and larger */
+@media (min-width: 1440px) {
+    .book-card {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
